@@ -1,0 +1,38 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="Button" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+text = "RootButton"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+offset = Vector2( 0, 20 )
+transform = Transform2D( 1, 0, 0, 1, 0, 20 )
+follow_viewport_enable = true
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+margin_right = 12.0
+margin_bottom = 20.0
+text = "CanvasLayerButton"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer2"]
+margin_top = 20.0
+margin_right = 200.0
+margin_bottom = 34.0
+text = "CanvasLayerButton Mouse Spot"
+__meta__ = {
+"_edit_use_anchors_": false
+}
